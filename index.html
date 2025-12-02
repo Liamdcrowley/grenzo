@@ -26,19 +26,25 @@
     }
   
     /* Center h1 and h2 */
-    h1 {
+    h1, h2 {
       text-align: center;
     }
   
-    /* Paragraph + list formatting (desktop default) */
+    /* Normalize bullets so they align with <p> */
+    ul {
+      margin-left: 0;      /* remove browser default offset */
+      padding-left: 0;     /* prevents double-indentation */
+    }
+  
+    /* Paragraph + list-item styling (desktop default) */
     p,
     li {
       margin-bottom: 0.7em;
       text-align: justify;
-      padding-left: 2.5%;
+      padding-left: 2.5%;   /* desktop padding */
     }
   
-    /* Mobile paragraph + list formatting */
+    /* Mobile formatting */
     @media (max-width: 767px) {
       p,
       li {
