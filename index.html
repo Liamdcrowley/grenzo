@@ -12,7 +12,6 @@
       margin: 20px;
     }
   
-    /* Desktop body padding */
     @media (min-width: 768px) {
       body {
         padding-left: 15%;
@@ -25,34 +24,35 @@
       margin-bottom: 0.4em;
     }
   
-    h1, h2 {
+    h1 {
       text-align: center;
     }
   
-    /* Bullets aligned with <p>: same padding, no extra margin */
+    /* Align bullet block with <p>, indent text inside li */
     ul {
-      margin: 0;            /* remove default indent */
-      padding-left: 2.5%;   /* exactly match <p> padding */
+      list-style-type: disc;
+      margin: 0;
+      padding-left: 2.5%;
     }
   
     li {
       margin-bottom: 0.7em;
       text-align: justify;
-      padding-left: 0;      /* prevent double indent */
+      padding-left: 1.2em;          /* Indent text block */
+      text-indent: -1.2em;          /* Pull first line back to bullet */
     }
   
-    /* Paragraphs */
     p {
       margin-bottom: 0.7em;
       text-align: justify;
       padding-left: 2.5%;
     }
   
-    /* Mobile adjustments */
     @media (max-width: 767px) {
       p {
         padding-left: 1%;
       }
+  
       ul {
         padding-left: 1%;
       }
