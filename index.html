@@ -25,29 +25,35 @@
       margin-bottom: 0.4em;
     }
   
-    /* Center h1 and h2 */
     h1, h2 {
       text-align: center;
     }
   
-    /* Normalize bullets so they align with <p> */
+    /* Bullets aligned with <p>: same padding, no extra margin */
     ul {
-      margin-left: 0;      /* remove browser default offset */
-      padding-left: 0;     /* prevents double-indentation */
+      margin: 0;            /* remove default indent */
+      padding-left: 2.5%;   /* exactly match <p> padding */
     }
   
-    /* Paragraph + list-item styling (desktop default) */
-    p,
     li {
       margin-bottom: 0.7em;
       text-align: justify;
-      padding-left: 2.5%;   /* desktop padding */
+      padding-left: 0;      /* prevent double indent */
     }
   
-    /* Mobile formatting */
+    /* Paragraphs */
+    p {
+      margin-bottom: 0.7em;
+      text-align: justify;
+      padding-left: 2.5%;
+    }
+  
+    /* Mobile adjustments */
     @media (max-width: 767px) {
-      p,
-      li {
+      p {
+        padding-left: 1%;
+      }
+      ul {
         padding-left: 1%;
       }
     }
@@ -61,7 +67,6 @@
       text-decoration: underline;
     }
   
-    /* Shared popup image element */
     #card-popup-img {
       position: fixed;
       display: none;
@@ -143,7 +148,7 @@
     </a>
   </p>
 
-  <ul style="list-style-type: disc; margin-left: 20px; padding-left: 0; font: inherit; color: inherit;">
+  <ul>
     <li style="margin-bottom: 0.6em;">
       "Compare Grenzo's power when the ability resolves with the power of the creature card in your graveyard to determine if you put it onto the battlefield. If Grenzo isn't on the battlefield at this time, use its last known power from when it was on the battlefield."
     </li>
