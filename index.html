@@ -216,17 +216,42 @@
     const defaultWidth = 300;
     const defaultHeight = 420;
 
-    document.querySelectorAll(".card-hover").forEach(el => {
+    // Map card name -> preloaded URL
+    const cardUrls = new Map();
+
+    // 1. Collect all unique card names and preload their images
+    const cardEls = document.querySelectorAll(".card-hover");
+    const uniqueNames = new Set();
+
+    cardEls.forEach(el => {
+      const name = el.dataset.cardName;
+      if (name) uniqueNames.add(name);
+    });
+
+    uniqueNames.forEach(name => {
+      const encoded = encodeURIComponent(name);
+      const url =
+        "https://api.scryfall.com/cards/named?exact=" +
+        encoded +
+        "&format=image&version=normal";
+
+      cardUrls.set(name, url);
+
+      // Preload image into browser cache
+      const img = new Image();
+      img.src = url;
+    });
+
+    // 2. Hover behavior using preloaded URLs
+    cardEls.forEach(el => {
       el.addEventListener("mouseenter", () => {
         const name = el.dataset.cardName;
         if (!name) return;
 
-        const encoded = encodeURIComponent(name);
-        popup.src =
-          "https://api.scryfall.com/cards/named?exact=" +
-          encoded +
-          "&format=image&version=normal";
+        const url = cardUrls.get(name);
+        if (!url) return;
 
+        popup.src = url;
         popup.style.display = "block";
         popup.style.visibility = "hidden";
 
@@ -265,5 +290,6 @@
       popup.style.display = "none";
     });
   </script>
+
 </body>
 </html>
