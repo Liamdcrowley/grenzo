@@ -15,8 +15,8 @@
     /* Desktop body padding */
     @media (min-width: 768px) {
       body {
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 15%;
+        padding-right: 15%;
       }
     }
   
@@ -30,17 +30,19 @@
       text-align: center;
     }
   
-    /* Paragraph formatting */
-    p {
+    /* Paragraph + list formatting (desktop default) */
+    p,
+    li {
       margin-bottom: 0.7em;
       text-align: justify;
-      padding-left: 5%;   /* desktop default */
+      padding-left: 2.5%;
     }
   
-    /* Mobile paragraph padding */
+    /* Mobile paragraph + list formatting */
     @media (max-width: 767px) {
-      p {
-        padding-left: 2.5%;
+      p,
+      li {
+        padding-left: 1%;
       }
     }
   
