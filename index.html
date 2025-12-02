@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grenzo Primer</title>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: #222;
+      margin: 20px;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0.7em;
+      margin-bottom: 0.4em;
+    }
+
+    p {
+      margin-bottom: 0.7em;
+    }
+
+    .card-hover {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      color: #b22222;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    /* The shared popup image element */
+    #card-popup-img {
+      position: fixed;
+      display: none;
+      z-index: 9999;
+      width: 300px;          /* controls final size */
+      max-width: 40vw;
+      border-radius: 10px;
+      border: 2px solid #111;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.45);
+      background: #000;
+      pointer-events: none;  /* mouse can’t “land” on the card */
+    }
+  </style>
+</head>
+<body>
+  <h1>Grenzo Primer</h1>
+
+  <p>Hello Sam B.</p>
+
+  <p>
+    This is a quickstart primer for your new commander —
+    <span class="card-hover" data-card-name="Grenzo, Dungeon Warden">Grenzo, Dungeon Warden</span>.
+  </p>
+
+  <h2>The Commander</h2>
+
+  <p>
+    <span class="card-hover" data-card-name="Grenzo, Dungeon Warden">Grenzo</span>
+    cheats out creatures of power less than or equal to his power from the bottom of your library.
+    There are 56 creatures in this deck. None of them have power greater than 3. Thus, you should
+    only ever cast
+    <span class="card-hover" data-card-name="Grenzo, Dungeon Warden">Grenzo</span>
+    for X = 1.
+  </p>
+
+  <p>
+    Generally, the creatures that you cheat out will either be value generation, or combo pieces
+    (or tutors for those combo pieces, or even tutor/combo pieces in one card). Use the value pieces
+    to stay alive, and to get you to those combo pieces faster. Use the combo pieces to win. Easy.
+  </p>
+
+  <p>
+    A lot of the value comes in the form of goblin tokens. Think of them like fuel, almost like your
+    food tokens in hobbits, except they can block too. For example, you can sac goblins to
+    <span class="card-hover" data-card-name="Shadowheart, Dark Justiciar">Shadowheart, Dark Justiciar</span>
+    for card draw;
+    <span class="card-hover" data-card-name="Skirk Prospector">Skirk Prospector</span>
+    for mana;
+    <span class="card-hover" data-card-name="Siege-Gang Commander">Siege-Gang Commander</span>
+    for creature/planeswalker removal; or
+    <span class="card-hover" data-card-name="Woe Strider">Woe Strider</span>
+    /
+    <span class="card-hover" data-card-name="Viscera Seer">Viscera Seer</span>
+    for scry. Scrying is particularly good in this deck, as you can chuck a creature on the bottom for a
+    guaranteed
+    <span class="card-hover" data-card-name="Grenzo, Dungeon Warden">Grenzo</span>
+    hit. Generally they will not be great attackers, but there are a couple of lords, and I could see
+    them doing enough damage to finish someone off with something like
+    <span class="card-hover" data-card-name="Krenko, Mob Boss">Krenko, Mob Boss</span>
+    plus
+    <span class="card-hover" data-card-name="Goblin Lookout">Goblin Lookout</span>
+    for example. But for the most part, when you win, you will be killing all players at once.
+  </p>
+
+  <p>
+    The greatest value piece in this deck (
+    <span class="card-hover" data-card-name="Heartstone">Heartstone</span>
+    ) unfortunately cannot be cheated out, and if it hits the grave, it is quite hard to get back. If you see it in
+    an opening hand, keep that hand (within reason). Get that shit out and have fun spewing cards out from the bottom
+    of your deck.
+  </p>
+
+  <h2>The Combos (how you win)</h2>
+
+  <p>
+    Use and abuse the four tutor cards in this deck to get your combos out. There are a few infinite
+    combos in this deck. These are the ones I know of.
+  </p>
+
+  <h3>Kiki-Jiki / Zealous Conscripts</h3>
+
+  <p>
+    <span class="card-hover" data-card-name="Kiki-Jiki, Mirror Breaker">Kiki-Jiki</span>
+    copies
+    <span class="card-hover" data-card-name="Zealous Conscripts">Zealous Conscripts</span>,
+    <span class="card-hover" data-card-name="Zealous Conscripts">Zealous Conscripts</span>
+    untaps
+    <span class="card-hover" data-card-name="Kiki-Jiki, Mirror Breaker">Kiki-Jiki</span>.
+    Repeat. Swing out with infinite hasted Conscripts. For extra salt when you do, call it a combat win.
+  </p>
+
+  <h3>Murderous Redcap / Metallic Mimic</h3>
+
+  <p>
+    <span class="card-hover" data-card-name="Murderous Redcap">Murderous Redcap</span>
+    enters with a persist counter, and deals damage to any target.
+    <span class="card-hover" data-card-name="Metallic Mimic">Metallic Mimic</span>
+    means that if Redcap were to die and re-enter from persist, the +1/+1 counter cancels out the -1/-1. Pair that with
+    any sac-outlet and sac-ping ad infinitum.
+  </p>
+
+  <h3>Heartstone, Bottom Library, Infinite Mana</h3>
+
+  <p>
+    With
+    <span class="card-hover" data-card-name="Heartstone">Heartstone</span>,
+    <span class="card-hover" data-card-name="Grenzo, Dungeon Warden">Grenzo</span>’s ability costs 1 mana. It also
+    means that cards like
+    <span class="card-hover" data-card-name="Tomb Trawler">Tomb Trawler</span>
+    or
+    <span class="card-hover" data-card-name="Barkform Harvester">Barkform Harvester</span>
+    only cost one mana for their abilities. Pair that with a sac-outlet and a ritual such as
+    <span class="card-hover" data-card-name="Priest of Urabrask">Priest of Urabrask</span>
+    or
+    <span class="card-hover" data-card-name="Priest of Gix">Priest of Gix</span>,
+    and you now net one mana every time you loop graveyard → bottom of library →
+    <span class="card-hover" data-card-name="Grenzo, Dungeon Warden">Grenzo</span>
+    ability. From here you can really do whatever. Grenzo-ing out your entire deck will probably just win you the game.
+    One example line: If your sac-outlet scrys, find
+    <span class="card-hover" data-card-name="Shadowheart, Dark Justiciar">Shadowheart, Dark Justiciar</span>,
+    Grenzo her out, then scry for
+    <span class="card-hover" data-card-name="Goblin Bombardment">Goblin Bombardment</span>,
+    draw it with
+    <span class="card-hover" data-card-name="Shadowheart, Dark Justiciar">Shadowheart, Dark Justiciar</span>,
+    and play it to loop-ping people to death.
+  </p>
+
+  <h3>Kiki-Jiki / Conspicuous Snoop / Sling-Gang Lieutenant</h3>
+
+  <p>
+    This combo is maybe the easiest to get out, but it is somewhat telegraphed, as it requires
+    <span class="card-hover" data-card-name="Conspicuous Snoop">Conspicuous Snoop</span>
+    on the battlefield, and not summoning sick. It’s almost a one card combo with
+    <span class="card-hover" data-card-name="Goblin Recruiter">Goblin Recruiter</span>.
+    Use Recruiter to get
+    <span class="card-hover" data-card-name="Conspicuous Snoop">Conspicuous Snoop</span>
+    and
+    <span class="card-hover" data-card-name="Kiki-Jiki, Mirror Breaker">Kiki-Jiki</span>
+    to the top of your library in that order (or just
+    <span class="card-hover" data-card-name="Kiki-Jiki, Mirror Breaker">Kiki-Jiki</span>
+    if Snoop is already on the battlefield/in your hand). With Snoop on the battlefield, and
+    <span class="card-hover" data-card-name="Kiki-Jiki, Mirror Breaker">Kiki-Jiki</span>
+    on the top of your library, tap Snoop using Kiki’s ability to copy itself infinitely. Then, tap Snoop to copy
+    Recruiter and get
+    <span class="card-hover" data-card-name="Sling-Gang Lieutenant">Sling-Gang Lieutenant</span>
+    to the top of your library. Sac all the copies and ping to death. This combo also works with a
+    <span class="card-hover" data-card-name="Boggart Harbinger">Boggart Harbinger</span>
+    instead of the Recruiter. The strongest part of this combo is how easy it is to assemble. The weakest part is that
+    Snoop must be on the battlefield for a whole round in order to tap for the first copy. Get around this with a
+    <span class="card-hover" data-card-name="Goblin Warchief">Goblin Warchief</span>
+    for haste.
+    <span class="card-hover" data-card-name="Mad Auntie">Mad Auntie</span>
+    can also be a nice way to keep Snoop safe from one destroy spell.
+  </p>
+
+  <h2>Final Thoughts</h2>
+
+  <p>
+    I’ve had a blast goldfishing this deck, each time I discover a slightly different line to the same
+    inevitable end — a swift death to all opponents. This deck’s greatest weakness, and one that will
+    become a problem if the deck happens to be as strong as it feels, is how much you love/need your
+    commander. I imagine he will end up being quite the removal target. While none of the winning
+    combos require
+    <span class="card-hover" data-card-name="Grenzo, Dungeon Warden">Grenzo</span>
+    per se, he makes it a hell of a lot easier to get and survive to that point.
+    <span class="card-hover" data-card-name="Mad Auntie">Mad Auntie</span>
+    is one way to protect him. Another option would be to let him hit the grave, and then bring him
+    back to your library with something like
+    <span class="card-hover" data-card-name="Tomb Trawler">Tomb Trawler</span>,
+    but then you need to get him back in your hand. Potentially worth a tutor if he’s become insanely
+    expensive, food for thought.
+  </p>
+
+  <p>Other than that, have fun!</p>
+
+  <!-- Shared popup image element -->
+  <img id="card-popup-img" alt="Card image" />
+
+  <script>
+    const popup = document.getElementById("card-popup-img");
+    const margin = 10;           // space from window edges
+    const defaultWidth = 300;
+    const defaultHeight = 420;
+
+    document.querySelectorAll(".card-hover").forEach(el => {
+      el.addEventListener("mouseenter", () => {
+        const name = el.dataset.cardName;
+        if (!name) return;
+
+        const encoded = encodeURIComponent(name);
+        popup.src =
+          "https://api.scryfall.com/cards/named?exact=" +
+          encoded +
+          "&format=image&version=normal";
+
+        popup.style.display = "block";
+        popup.style.visibility = "hidden";
+
+        // Position after layout updates
+        requestAnimationFrame(() => {
+          const rect = el.getBoundingClientRect();
+          const cardWidth = popup.offsetWidth || defaultWidth;
+          const cardHeight = popup.offsetHeight || defaultHeight;
+
+          // Center horizontally over the text
+          let left = rect.left + rect.width / 2 - cardWidth / 2;
+          const maxLeft = window.innerWidth - cardWidth - margin;
+
+          if (left < margin) left = margin;
+          if (left > maxLeft) left = maxLeft;
+
+          // Prefer above; if not enough room, place below
+          let top = rect.top - cardHeight - margin;
+          if (top < margin) {
+            top = rect.bottom + margin;
+          }
+
+          popup.style.left = left + "px";
+          popup.style.top = top + "px";
+          popup.style.visibility = "visible";
+        });
+      });
+
+      el.addEventListener("mouseleave", () => {
+        popup.style.display = "none";
+      });
+    });
+
+    // Hide popup if user scrolls while hovering
+    window.addEventListener("scroll", () => {
+      popup.style.display = "none";
+    });
+  </script>
+</body>
+</html>
